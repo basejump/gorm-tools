@@ -78,6 +78,9 @@ endpoints:
         unique-names: true
 gorm:
     tools:
+        repoEntityConfigs:
+            Org:
+                selectFields: [name, num, address.*]
         mango:
             criteriaKeyName: criteria
             defaultQuickSearch: [name, num, description, address.city, jumper.name]

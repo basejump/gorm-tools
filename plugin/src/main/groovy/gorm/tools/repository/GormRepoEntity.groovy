@@ -8,7 +8,7 @@ import groovy.transform.CompileStatic
 import org.grails.datastore.gorm.GormEntity
 
 @CompileStatic
-trait GormRepoEntity<D extends GormEntity<D>> implements MangoQueryEntity {
+trait GormRepoEntity<D extends GormEntity<D>> implements MangoQueryEntity, RepoEntityConfig {
 
     private static RepositoryApi cachedRepo
 

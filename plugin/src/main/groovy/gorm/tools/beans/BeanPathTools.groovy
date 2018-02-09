@@ -201,6 +201,7 @@ class BeanPathTools {
         Map p = new MapFlattener().flatten(jsonMap ?: (Map) request.JSON)
         return getGrailsParameterMap(p, request)
     }
+
     @CompileDynamic
     static List<String> getIncludes(String className, List<String> fields){
         List<PersistentProperty> properties = GormMetaUtils.getPersistentProperties(className)
@@ -220,6 +221,11 @@ class BeanPathTools {
                 }
         }
         result.unique()
+    }
+
+    static List<String> getIncludes(String className){
+        List <String> fields = []
+        getIncludes(className, fields)
     }
 
     @CompileDynamic

@@ -11,6 +11,7 @@ import gorm.tools.repository.DefaultGormRepo
 import gorm.tools.repository.RepoUtil
 import gorm.tools.repository.errors.RepoExceptionSupport
 import gorm.tools.repository.events.RepoEventPublisher
+import grails.config.Config
 import grails.core.ArtefactHandler
 import grails.core.GrailsApplication
 import grails.core.GrailsClass
@@ -102,8 +103,8 @@ class GormToolsPluginHelper {
      * Supports paths for nested domains, for example "address.city", so if domain has
      * association address and it has property city it will be added
      *
-     * @param config config bean
-     * @param grailsApplication grails application context
+     * @param fields list of fields from default config
+     * @param domains list of persistent entities
      */
     static void addQuickSearchFields(List<String> fields, List<PersistentEntity> domains){
         domains.each { domainClass ->
@@ -112,6 +113,18 @@ class GormToolsPluginHelper {
                     GormMetaUtils.hasProperty(domainClass, it as String)
                 }
             }
+        }
+    }
+
+    /**
+     *  Sets config value for domain from config
+     *
+     * @param config config bean
+     * @param domains list of persistent entities
+     */
+    static void addRepoEntityConfig(Config config, List<PersistentEntity> domains){
+        domains.each {PersistentEntity domainClass ->
+                domainClass.getJavaClass().repoEntityConfig = config.gorm?.tools?.repoEntityConfigs[domainClass.class.simpleName]
         }
     }
 
