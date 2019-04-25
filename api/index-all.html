@@ -407,6 +407,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="gorm/tools/repository/RepoUtil.html#checkVersion(org.grails.datastore.gorm.GormEntity, java.lang.Long)" title="Method in RepoUtil">checkVersion(GormEntity, Long)</a></span> - Method in <a href="gorm/tools/repository/RepoUtil.html">RepoUtil</a>
 </dt><dd> <div class="block">checks the passed in version with the version on the entity (entity.version)
  make sure entity.version is not greater</div></dd>
+<dt><span class="strong"><a href="gorm/tools/databinding/EntityMapBinder.html#CLASS_TO_BINDING_INCLUDE_LIST" title="Field in EntityMapBinder">CLASS_TO_BINDING_INCLUDE_LIST</a></span> - Field in <a href="gorm/tools/databinding/EntityMapBinder.html">EntityMapBinder</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/integration/DataIntegrationTest.html#cleanupRegistry()" title="Method in DataIntegrationTest">cleanupRegistry()</a></span> - Method in <a href="gorm/tools/testing/integration/DataIntegrationTest.html">DataIntegrationTest</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepo.html#clear()" title="Method in GormRepo">clear()</a></span> - Method in <a href="gorm/tools/repository/GormRepo.html">GormRepo</a>
@@ -670,6 +672,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/IsoDateUtil.html#format(java.util.Date)" title="Method in IsoDateUtil">format(Date)</a></span> - Method in <a href="gorm/tools/beans/IsoDateUtil.html">IsoDateUtil</a>
 </dt><dd> <div class="block">Returns a string representation of a given date in the 'yyyy-MM-dd'T'HH:mm:ss.SSSZ' format. </div></dd>
+<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#fromLocalDate(java.time.LocalDate, java.time.ZoneId)" title="Method in DateUtil">fromLocalDate(LocalDate, ZoneId)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#fromLocalDateTime(java.time.LocalDateTime, java.time.ZoneId)" title="Method in DateUtil">fromLocalDateTime(LocalDateTime, ZoneId)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
+</dt><dd> <div class="block"></div></dd>
 </dl>
 
     
@@ -949,7 +955,7 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/json/Jsonify.html#getViewTemplate()" title="Method in Jsonify">getViewTemplate()</a></span> - Method in <a href="gorm/tools/json/Jsonify.html">Jsonify</a>
 </dt><dd> <div class="block"></div></dd>
-<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#getYearOf(java.util.Date)" title="Method in DateUtil">getYearOf(Date)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
+<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#getYearOf(java.time.temporal.TemporalAccessor)" title="Method in DateUtil">getYearOf(TemporalAccessor)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
 </dt><dd> <div class="block">Returns the year of the date specified.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/api/GormBatchRepo.html" title="Trait in gorm.tools.repository.api">GormBatchRepo</a></span> - Trait in <a href="./gorm/tools/repository/api/package-summary.html">gorm.tools.repository.api</a>
 </dt><dd><div class="block">A trait add batch processing and "mass" updating methods to a Repository</div></dd>
@@ -1527,6 +1533,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Transforms passed params map to normalized mango criteria map</div></dd>
 <dt><span class="strong"><a href="gorm/tools/Pager.html#toInteger(java.lang.Object)" title="Method in Pager">toInteger(Object)</a></span> - Method in <a href="gorm/tools/Pager.html">Pager</a>
 </dt><dd> <div class="block">Converts object to integer</div></dd>
+<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#toLocalDate(java.util.Date, java.time.ZoneId)" title="Method in DateUtil">toLocalDate(Date, ZoneId)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#toLocalDateTime(java.util.Date, java.time.ZoneId)" title="Method in DateUtil">toLocalDateTime(Date, ZoneId)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/mango/MangoTidyMap.html#toMangoOperator(java.util.Map, java.util.Map)" title="Method in MangoTidyMap">toMangoOperator(Map, Map)</a></span> - Method in <a href="gorm/tools/mango/MangoTidyMap.html">MangoTidyMap</a>
 </dt><dd> <div class="block">Adds mango operators based on values types</div></dd>
 <dt><span class="strong"><a href="gorm/tools/json/Jsonify.JsonifyResult.html#toString()" title="Method in Jsonify.JsonifyResult">toString()</a></span> - Method in <a href="gorm/tools/json/Jsonify.JsonifyResult.html">Jsonify.JsonifyResult</a>
