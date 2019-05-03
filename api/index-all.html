@@ -130,6 +130,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="grails/plugin/gormtools/GormToolsPluginHelper.html#addQuickSearchFields(List<String>, List<PersistentEntity>)" title="Method in GormToolsPluginHelper">addQuickSearchFields(List&lt;String&gt;, List&lt;PersistentEntity&gt;)</a></span> - Method in <a href="grails/plugin/gormtools/GormToolsPluginHelper.html">GormToolsPluginHelper</a>
 </dt><dd> <div class="block">Adds quickSearch fields to domains from config, if domain has such properties.
  </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#addToBinding(java.lang.String, java.lang.Object)" title="Method in ConfigMap">addToBinding(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#addUnderscore(java.lang.String, java.lang.String)" title="Method in GrailsDomainBinder">addUnderscore(String, String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/AfterBindEvent.html" title="Class in gorm.tools.repository.events">AfterBindEvent</a></span> - Class in <a href="./gorm/tools/repository/events/package-summary.html">gorm.tools.repository.events</a>
@@ -162,6 +164,10 @@ if (location.href.indexOf('is-external=true') == -1) {
  By default free-jqrid prepared sorting properties with next pattern
  sort = columnName(id, name, etc) order(asc|desc), next column order of the last column name is in `order` parametr
  Example: if user first sorted by name and then by id sort params will be look like [sort: 'name asc, id', order: 'asc']</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#asBoolean()" title="Method in ConfigMap.NullSafeNavigator">asBoolean()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#asType(java.lang.Class)" title="Method in ConfigMap.NullSafeNavigator">asType(Class)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/async/AsyncBatchSupport.html" title="Trait in gorm.tools.async">AsyncBatchSupport</a></span> - Trait in <a href="./gorm/tools/async/package-summary.html">gorm.tools.async</a>
 </dt><dd><div class="block">a trait to be used for colating/slicing a list into "batches" to then asynchronously with Transactions
  insert or update for maximum performance.</div></dd>
@@ -411,6 +417,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/integration/DataIntegrationTest.html#cleanupRegistry()" title="Method in DataIntegrationTest">cleanupRegistry()</a></span> - Method in <a href="gorm/tools/testing/integration/DataIntegrationTest.html">DataIntegrationTest</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#clear()" title="Method in ConfigMap">clear()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#clear()" title="Method in ConfigMap.NullSafeNavigator">clear()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepo.html#clear()" title="Method in GormRepo">clear()</a></span> - Method in <a href="gorm/tools/repository/GormRepo.html">GormRepo</a>
 </dt><dd> <div class="block">cache clear on the datastore's currentSession. </div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/RepoUtil.html#clear(org.springframework.transaction.TransactionStatus)" title="Method in RepoUtil">clear(TransactionStatus)</a></span> - Method in <a href="gorm/tools/repository/RepoUtil.html">RepoUtil</a>
@@ -421,9 +431,20 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/integration/DataIntegrationTest.html#clearMetaClassChanges()" title="Method in DataIntegrationTest">clearMetaClassChanges()</a></span> - Method in <a href="gorm/tools/testing/integration/DataIntegrationTest.html">DataIntegrationTest</a>
 </dt><dd> <div class="block">Reverts all metaclass changes done since last call to trackMetaClassChanges()</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#clone()" title="Method in ConfigMap">clone()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/async/AsyncBatchSupport.html#collate(java.util.List, java.lang.Integer)" title="Method in AsyncBatchSupport">collate(List, Integer)</a></span> - Method in <a href="gorm/tools/async/AsyncBatchSupport.html">AsyncBatchSupport</a>
 </dt><dd> <div class="block">Uses collate to break or slice the list into sub-lists of batches. </div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/GormToolsSpecHelper.html#commonBeans()" title="Method in GormToolsSpecHelper">commonBeans()</a></span> - Method in <a href="gorm/tools/testing/unit/GormToolsSpecHelper.html">GormToolsSpecHelper</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html" title="Class in yakworks.commons">ConfigMap</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block">Copied from org.grails.config.ConfigMap so we can use it as a gradle plugin here
+ This is like groovy's ConfigObject but better.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html" title="Class in yakworks.commons.ConfigMap">ConfigMap.NullSafeNavigator</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#ConfigMap.NullSafeNavigator(yakworks.commons.ConfigMap, List<String>)" title="Constructor in ConfigMap.NullSafeNavigator">ConfigMap.NullSafeNavigator(ConfigMap, List&lt;String&gt;)</a></span> - Constructor in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#ConfigMap(yakworks.commons.ConfigMap, List<String>)" title="Constructor in ConfigMap">ConfigMap(ConfigMap, List&lt;String&gt;)</a></span> - Constructor in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/hibernate/SpringBeanIdGenerator.html#configure(org.hibernate.type.Type, java.util.Properties, org.hibernate.service.ServiceRegistry)" title="Method in SpringBeanIdGenerator">configure(Type, Properties, ServiceRegistry)</a></span> - Method in <a href="gorm/tools/hibernate/SpringBeanIdGenerator.html">SpringBeanIdGenerator</a>
 </dt><dd> <div class="block"></div></dd>
@@ -432,6 +453,14 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#configureNamingStrategy(java.lang.String, java.lang.Object)" title="Method in GrailsDomainBinder">configureNamingStrategy(String, Object)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block">Override the default naming strategy given a Class or a full class name,
  or an instance of a NamingStrategy.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#containsKey(java.lang.Object)" title="Method in ConfigMap">containsKey(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#containsKey(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">containsKey(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#containsValue(java.lang.Object)" title="Method in ConfigMap">containsValue(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#containsValue(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">containsValue(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#contribute(org.hibernate.boot.spi.InFlightMetadataCollector, org.jboss.jandex.IndexView)" title="Method in GrailsDomainBinder">contribute(InFlightMetadataCollector, IndexView)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/MultiFormatDateConverter.html#convert(java.lang.Object)" title="Method in MultiFormatDateConverter">convert(Object)</a></span> - Method in <a href="gorm/tools/beans/MultiFormatDateConverter.html">MultiFormatDateConverter</a>
@@ -498,6 +527,8 @@ if (location.href.indexOf('is-external=true') == -1) {
  </div></dd>
 <dt><span class="strong"><a href="gorm/tools/DbDialectService.html" title="Class in gorm.tools">DbDialectService</a></span> - Class in <a href="./gorm/tools/package-summary.html">gorm.tools</a>
 </dt><dd><div class="block">Utility class to help create generic code and SQL that can work across supported databases.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Pogo.html#deepcopy(java.lang.Object)" title="Method in Pogo">deepcopy(Object)</a></span> - Method in <a href="yakworks/commons/Pogo.html">Pogo</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#DEFAULT_ENUM_TYPE" title="Field in GrailsDomainBinder">DEFAULT_ENUM_TYPE</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/DefaultGormRepo.html" title="Class in gorm.tools.repository">DefaultGormRepo</a></span> - Class in <a href="./gorm/tools/repository/package-summary.html">gorm.tools.repository</a>
@@ -611,6 +642,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd><div class="block">an extension of the default ValidationException so you can pass the entity and the message map</div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/errors/EntityValidationException.html#EntityValidationException(java.util.Map, def, org.springframework.validation.Errors, java.lang.Throwable)" title="Constructor in EntityValidationException">EntityValidationException(Map, def, Errors, Throwable)</a></span> - Constructor in <a href="gorm/tools/repository/errors/EntityValidationException.html">EntityValidationException</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#entrySet()" title="Method in ConfigMap">entrySet()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#entrySet()" title="Method in ConfigMap.NullSafeNavigator">entrySet()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#ENUM_CLASS_PROP" title="Field in GrailsDomainBinder">ENUM_CLASS_PROP</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#ENUM_TYPE_CLASS" title="Field in GrailsDomainBinder">ENUM_TYPE_CLASS</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -619,10 +654,19 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html#eq(java.lang.String, java.lang.Object)" title="Method in GormHibernateCriteriaBuilder">eq(String, Object)</a></span> - Method in <a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html">GormHibernateCriteriaBuilder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#equals(java.lang.Object)" title="Method in ConfigMap">equals(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#equals(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">equals(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="grails/plugin/gormtools/ErrorMessageService.html" title="Class in grails.plugin.gormtools">ErrorMessageService</a></span> - Class in <a href="./grails/plugin/gormtools/package-summary.html">grails.plugin.gormtools</a>
 </dt><dd><div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#evalAll()" title="Method in ConfigMap">evalAll()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block">Gets the key and if its a Map will make sure all strings that start with $ have been evaluated
+ returns this instance</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#evaluateMapping(org.grails.datastore.mapping.model.PersistentEntity, Closure<?>, boolean)" title="Method in GrailsDomainBinder">evaluateMapping(PersistentEntity, Closure&lt;?&gt;, boolean)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Shell.html#exec(java.lang.String)" title="Method in Shell">exec(String)</a></span> - Method in <a href="yakworks/commons/Shell.html">Shell</a>
+</dt><dd> <div class="block">shortcut call to ['sh', '-c', command].execute().text.trim()</div></dd>
 </dl>
 
     
@@ -687,6 +731,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/AppCtx.html#get(java.lang.String, Class<T>)" title="Method in AppCtx">get(String, Class&lt;T&gt;)</a></span> - Method in <a href="gorm/tools/beans/AppCtx.html">AppCtx</a>
 </dt><dd> <div class="block">Preferred method as typed checked, call the ApplicationContext.getBean</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#get(java.lang.Object)" title="Method in ConfigMap">get(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#get(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">get(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/DomainRepoTest.html#get(def)" title="Method in DomainRepoTest">get(def)</a></span> - Method in <a href="gorm/tools/testing/unit/DomainRepoTest.html">DomainRepoTest</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepo.html#get(java.util.Map)" title="Method in GormRepo">get(Map)</a></span> - Method in <a href="gorm/tools/repository/GormRepo.html">GormRepo</a>
@@ -707,6 +755,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getAssociationDescription(org.grails.datastore.mapping.model.types.Association)" title="Method in GrailsDomainBinder">getAssociationDescription(Association)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#getAt(java.lang.Object)" title="Method in ConfigMap">getAt(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#getAt(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">getAt(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/idgen/PooledIdGenerator.html#getBatchSize(java.lang.String)" title="Method in PooledIdGenerator">getBatchSize(String)</a></span> - Method in <a href="gorm/tools/idgen/PooledIdGenerator.html">PooledIdGenerator</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/AfterPersistEvent.html#getBindAction()" title="Method in AfterPersistEvent">getBindAction()</a></span> - Method in <a href="gorm/tools/repository/events/AfterPersistEvent.html">AfterPersistEvent</a>
@@ -719,6 +771,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Returns a Calendar instance for a given date.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/DbDialectService.html#getCharFn()" title="Method in DbDialectService">getCharFn()</a></span> - Method in <a href="gorm/tools/DbDialectService.html">DbDialectService</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getClassName(java.lang.String)" title="Method in NameUtils">getClassName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Return the class name for the given logical name. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getClassNameRepresentation(java.lang.String)" title="Method in NameUtils">getClassNameRepresentation(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the class name representation of the given name</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getColumnForSimpleValue(org.hibernate.mapping.SimpleValue)" title="Method in GrailsDomainBinder">getColumnForSimpleValue(SimpleValue)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getColumnNameForPropertyAndPath(org.grails.datastore.mapping.model.PersistentProperty, java.lang.String, org.grails.orm.hibernate.cfg.ColumnConfig, java.lang.String)" title="Method in GrailsDomainBinder">getColumnNameForPropertyAndPath(PersistentProperty, String, ColumnConfig, String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -798,6 +854,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#getFourMonthsBack()" title="Method in DateUtil">getFourMonthsBack()</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getFullClassName(java.lang.String)" title="Method in NameUtils">getFullClassName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the class name, including package, for the given class. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getGetterName(java.lang.String)" title="Method in NameUtils">getGetterName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Calculate the name for a getter method to retrieve the specified property</div></dd>
 <dt><span class="strong"><a href="gorm/tools/DbDialectService.html#getGlobalVariables()" title="Method in DbDialectService">getGlobalVariables()</a></span> - Method in <a href="gorm/tools/DbDialectService.html">DbDialectService</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/AppCtx.html#getGrails()" title="Method in AppCtx">getGrails()</a></span> - Method in <a href="gorm/tools/beans/AppCtx.html">AppCtx</a>
@@ -840,6 +900,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getLaziness(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">getLaziness(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getLogicalName(java.lang.String, java.lang.String)" title="Method in NameUtils">getLogicalName(String, String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Retrieves the logical name of the class without the trailing name</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getLogicalPropertyName(java.lang.String, java.lang.String)" title="Method in NameUtils">getLogicalPropertyName(String, String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/api/RepositoryApi.html#getMapBinder()" title="Method in RepositoryApi">getMapBinder()</a></span> - Method in <a href="gorm/tools/repository/api/RepositoryApi.html">RepositoryApi</a>
 </dt><dd> <div class="block">The data binder to use. </div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getMapElementName(org.grails.datastore.mapping.model.PersistentProperty, java.lang.String)" title="Method in GrailsDomainBinder">getMapElementName(PersistentProperty, String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -863,8 +927,12 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Returns the first letter(uppercase) of a specified month.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getNameForPropertyAndPath(org.grails.datastore.mapping.model.PersistentProperty, java.lang.String)" title="Method in GrailsDomainBinder">getNameForPropertyAndPath(PersistentProperty, String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getNameFromScript(java.lang.String)" title="Method in NameUtils">getNameFromScript(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Calculates the class name from a script name in the form my-funk-grails-script.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getNamingStrategy(java.lang.String)" title="Method in GrailsDomainBinder">getNamingStrategy(String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getNaturalName(java.lang.String)" title="Method in NameUtils">getNaturalName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Converts a property name into its natural language equivalent eg ('firstName' becomes 'First Name')</div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/BeanPathTools.html#getNestedBean(java.lang.Object, java.lang.String)" title="Method in BeanPathTools">getNestedBean(Object, String)</a></span> - Method in <a href="gorm/tools/beans/BeanPathTools.html">BeanPathTools</a>
 </dt><dd> <div class="block">Returns the deepest nested bean</div></dd>
 <dt><span class="strong"><a href="gorm/tools/idgen/StringIdGenerator.html#getNewId(java.lang.String)" title="Method in StringIdGenerator">getNewId(String)</a></span> - Method in <a href="gorm/tools/idgen/StringIdGenerator.html">StringIdGenerator</a>
@@ -881,6 +949,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Returns the next month for current date and sets the day number to 1.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/Pager.html#getOffset()" title="Method in Pager">getOffset()</a></span> - Method in <a href="gorm/tools/Pager.html">Pager</a>
 </dt><dd> <div class="block">Calculates offset based on page number and max value</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPackageName(java.lang.String)" title="Method in NameUtils">getPackageName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the class name without the package prefix.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/Pager.html#getPageCount()" title="Method in Pager">getPageCount()</a></span> - Method in <a href="gorm/tools/Pager.html">Pager</a>
 </dt><dd> <div class="block">Calculates total number of pages</div></dd>
 <dt><span class="strong"><a href="gorm/tools/GormMetaUtils.html#getPersistentEntity(org.grails.datastore.gorm.GormEntity)" title="Method in GormMetaUtils">getPersistentEntity(GormEntity)</a></span> - Method in <a href="gorm/tools/GormMetaUtils.html">GormMetaUtils</a>
@@ -890,14 +960,33 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="gorm/tools/GormMetaUtils.html#getPersistentProperties(java.lang.String)" title="Method in GormMetaUtils">getPersistentProperties(String)</a></span> - Method in <a href="gorm/tools/GormMetaUtils.html">GormMetaUtils</a>
 </dt><dd> <div class="block">Returns persistent properties for persistent entity(finds by name)
  Adds composite identeties, which are not in persistent properties by default</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPluginName(java.lang.String)" title="Method in NameUtils">getPluginName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the name of a plugin given the name of the *GrailsPlugin.groovy
+ descriptor file. </div></dd>
 <dt><span class="strong"><a href="grails/plugin/gormtools/RepositoryArtefactHandler.html#getPluginName()" title="Method in RepositoryArtefactHandler">getPluginName()</a></span> - Method in <a href="grails/plugin/gormtools/RepositoryArtefactHandler.html">RepositoryArtefactHandler</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#getPreviousMonth()" title="Method in DateUtil">getPreviousMonth()</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
 </dt><dd> <div class="block">Returns the previous month for current date and sets the day number to 1.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#getProperty(java.lang.String)" title="Method in ConfigMap">getProperty(String)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#getProperty(java.lang.String)" title="Method in ConfigMap.NullSafeNavigator">getProperty(String)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getProperty(org.hibernate.mapping.PersistentClass, java.lang.String)" title="Method in GrailsDomainBinder">getProperty(PersistentClass, String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getPropertyConfig(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">getPropertyConfig(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyForGetter(java.lang.String, java.lang.Class)" title="Method in NameUtils">getPropertyForGetter(String, Class)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns a property name equivalent for the given getter name and return type or null if it is not a valid getter. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyForSetter(java.lang.String)" title="Method in NameUtils">getPropertyForSetter(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns a property name equivalent for the given setter name or null if it is not a valid setter. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyName(Class<?>)" title="Method in NameUtils">getPropertyName(Class&lt;?&gt;)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Shorter version of getPropertyNameRepresentation.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyNameConvention(java.lang.Object, java.lang.String)" title="Method in NameUtils">getPropertyNameConvention(Object, String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns an appropriate property name for the given object. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyNameForLowerCaseHyphenSeparatedName(java.lang.String)" title="Method in NameUtils">getPropertyNameForLowerCaseHyphenSeparatedName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Converts foo-bar into fooBar.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getPropertyNameRepresentation(java.lang.String)" title="Method in NameUtils">getPropertyNameRepresentation(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the property name representation of the given name.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/GormUtils.html#getPropertyValue(java.lang.Object, java.lang.String)" title="Method in GormUtils">getPropertyValue(Object, String)</a></span> - Method in <a href="gorm/tools/GormUtils.html">GormUtils</a>
 </dt><dd> <div class="block">Return the value of the (possibly nested) property of the specified name, for the specified source object</div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepoEntity.html#getRepo()" title="Method in GormRepoEntity">getRepo()</a></span> - Method in <a href="gorm/tools/repository/GormRepoEntity.html">GormRepoEntity</a>
@@ -925,6 +1014,13 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/RepositoryEvent.html#getRoutingKey()" title="Method in RepositoryEvent">getRoutingKey()</a></span> - Method in <a href="gorm/tools/repository/events/RepositoryEvent.html">RepositoryEvent</a>
 </dt><dd> <div class="block">@return the routing key in the form of "DomainClass.eventMethod", for example "City.afterPersist"</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getScriptName(java.lang.String)" title="Method in NameUtils">getScriptName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Retrieves the script name representation of the given class name.
+ </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getSetterName(java.lang.String)" title="Method in NameUtils">getSetterName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Retrieves the name of a setter for the specified property name</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#getShortName(java.lang.String)" title="Method in NameUtils">getShortName(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns the class name without the package prefix.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#getSingleColumnConfig(org.grails.orm.hibernate.cfg.PropertyConfig)" title="Method in GrailsDomainBinder">getSingleColumnConfig(PropertyConfig)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepo.html#getStaticApi()" title="Method in GormRepo">getStaticApi()</a></span> - Method in <a href="gorm/tools/repository/GormRepo.html">GormRepo</a>
@@ -1024,6 +1120,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#hasCompositeIdentifier(org.grails.orm.hibernate.cfg.Mapping)" title="Method in GrailsDomainBinder">hasCompositeIdentifier(Mapping)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#hashCode()" title="Method in ConfigMap">hashCode()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#hasJoinColumnMapping(org.grails.orm.hibernate.cfg.PropertyConfig)" title="Method in GrailsDomainBinder">hasJoinColumnMapping(PropertyConfig)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#hasJoinKeyMapping(org.grails.orm.hibernate.cfg.PropertyConfig)" title="Method in GrailsDomainBinder">hasJoinKeyMapping(PropertyConfig)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -1053,9 +1151,15 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">setup defaults for poolSize and batchSize if config isn't present. batchSize set to 100 if not config found</div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/RepoEventPublisher.html#init()" title="Method in RepoEventPublisher">init()</a></span> - Method in <a href="gorm/tools/repository/events/RepoEventPublisher.html">RepoEventPublisher</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#injectTrampoline(java.util.Map, groovy.lang.Closure)" title="Method in ConfigMap">injectTrampoline(Map, Closure)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html#inList(java.lang.String, java.lang.Object)" title="Method in GormHibernateCriteriaBuilder">inList(String, Object)</a></span> - Method in <a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html">GormHibernateCriteriaBuilder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/RepoEventPublisher.html#invokeEventMethod(java.lang.Object, java.lang.String, java.lang.Object)" title="Method in RepoEventPublisher">invokeEventMethod(Object, String, Object)</a></span> - Method in <a href="gorm/tools/repository/events/RepoEventPublisher.html">RepoEventPublisher</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#invokeMethod(java.lang.String, java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">invokeMethod(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#is(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">is(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="grails/plugin/gormtools/RepositoryArtefactHandler.html#isArtefactClass(java.lang.Class)" title="Method in RepositoryArtefactHandler">isArtefactClass(Class)</a></span> - Method in <a href="grails/plugin/gormtools/RepositoryArtefactHandler.html">RepositoryArtefactHandler</a>
 </dt><dd> <div class="block"></div></dd>
@@ -1065,14 +1169,23 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isBidirectionalOneToManyMap(org.grails.datastore.mapping.model.types.Association)" title="Method in GrailsDomainBinder">isBidirectionalOneToManyMap(Association)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#isBlank(java.lang.String)" title="Method in NameUtils">isBlank(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isCircularAssociation(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isCircularAssociation(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isComponentPropertyNullable(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isComponentPropertyNullable(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isCompositeIdProperty(org.grails.orm.hibernate.cfg.Mapping, org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isCompositeIdProperty(Mapping, PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#isEmpty()" title="Method in ConfigMap">isEmpty()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#isEmpty()" title="Method in ConfigMap.NullSafeNavigator">isEmpty()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/databinding/EntityMapBinder.html#isExplicitBind(java.lang.Object, java.lang.String)" title="Method in EntityMapBinder">isExplicitBind(Object, String)</a></span> - Method in <a href="gorm/tools/databinding/EntityMapBinder.html">EntityMapBinder</a>
 </dt><dd> <div class="block">Checks if a given association is explicitly marked as bindable and should be binded in any case.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#isGetter(java.lang.String, java.lang.Class, Class<?>)" title="Method in NameUtils">isGetter(String, Class, Class&lt;?&gt;)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Returns true if the name of the method specified and the number of arguments make it a javabean property getter.
+ </div></dd>
 <dt><span class="strong"><a href="gorm/tools/DbDialectService.html#isH2()" title="Method in DbDialectService">isH2()</a></span> - Method in <a href="gorm/tools/DbDialectService.html">DbDialectService</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isIdentityProperty(org.grails.orm.hibernate.cfg.Mapping, org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isIdentityProperty(Mapping, PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -1088,6 +1201,9 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="gorm/tools/beans/IsoDateUtil.html" title="Class in gorm.tools.beans">IsoDateUtil</a></span> - Class in <a href="./gorm/tools/beans/package-summary.html">gorm.tools.beans</a>
 </dt><dd><div class="block">Provides a set of methods for parsing/formatting ISO 8601 dates.
  </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#isPropertyMethodSuffix(java.lang.String)" title="Method in NameUtils">isPropertyMethodSuffix(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">This method is used when interrogating a method name to determine if the
+ method represents a property getter.  </div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isSaveUpdateCascade(java.lang.String)" title="Method in GrailsDomainBinder">isSaveUpdateCascade(String)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block">Check if a save-update cascade is defined within the Hibernate cascade properties string.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isSorted(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isSorted(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -1096,6 +1212,12 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Checks if the current day number is equal to specified day number in a given period.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#isUnidirectionalOneToMany(org.grails.datastore.mapping.model.PersistentProperty)" title="Method in GrailsDomainBinder">isUnidirectionalOneToMany(PersistentProperty)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block">Checks whether a property is a unidirectional non-circular one-to-many</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#isValidJavaIdentifier(java.lang.String)" title="Method in NameUtils">isValidJavaIdentifier(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Test whether the given name is a valid Java identifier</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html#isValidJavaPackage(java.lang.String)" title="Method in NameUtils">isValidJavaPackage(String)</a></span> - Method in <a href="yakworks/commons/NameUtils.html">NameUtils</a>
+</dt><dd> <div class="block">Test whether the give package name is a valid Java package</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#iterator()" title="Method in ConfigMap.NullSafeNavigator">iterator()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 </dl>
 
     
@@ -1120,6 +1242,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">K</h2>
 <dl>
 
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#keySet()" title="Method in ConfigMap">keySet()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#keySet()" title="Method in ConfigMap.NullSafeNavigator">keySet()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/KeyVersion.html" title="Class in gorm.tools.beans">KeyVersion</a></span> - Class in <a href="./gorm/tools/beans/package-summary.html">gorm.tools.beans</a>
 </dt><dd><div class="block"></div></dd>
 </dl>
@@ -1166,9 +1292,21 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd><div class="block">MapFlattener taken from here https://github.com/dmillett/jConfigMap</div></dd>
 <dt><span class="strong"><a href="gorm/tools/jdbc/GrailsParameterMapRowMapper.html#mapRow(java.sql.ResultSet, int)" title="Method in GrailsParameterMapRowMapper">mapRow(ResultSet, int)</a></span> - Method in <a href="gorm/tools/jdbc/GrailsParameterMapRowMapper.html">GrailsParameterMapRowMapper</a>
 </dt><dd> <div class="block">Returns a GrailsParameterMap instance which is build from records in a given ResultSet.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Maps.html" title="Class in yakworks.commons">Maps</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block">Helpful methods for dealing with maps</div></dd>
 <dt><span class="strong"><a href="gorm/tools/Pager.html#max(java.util.Map, java.lang.Integer)" title="Method in Pager">max(Map, Integer)</a></span> - Method in <a href="gorm/tools/Pager.html">Pager</a>
 </dt><dd> <div class="block">Computes max value, if max not specified, then 10
  Default max allowed value is 100</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#merge(java.util.Map, boolean)" title="Method in ConfigMap">merge(Map, boolean)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Maps.html#merge(java.util.Map)" title="Method in Maps">merge(Map)</a></span> - Method in <a href="yakworks/commons/Maps.html">Maps</a>
+</dt><dd> <div class="block">https://gist.github.com/robhruska/4612278
+ Deeply merges the contents of each Map in sources, merging from
+ "right to left" and returning the merged Map.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Pogo.html#merge(java.util.Map, java.lang.Object, java.util.Map)" title="Method in Pogo">merge(Map, Object, Map)</a></span> - Method in <a href="yakworks/commons/Pogo.html">Pogo</a>
+</dt><dd> <div class="block">Merge the a map, nested or not, onto the pogo. </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#mergeMapEntry(yakworks.commons.ConfigMap, java.lang.String, java.lang.Object)" title="Method in ConfigMap">mergeMapEntry(ConfigMap, String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#metadataBuildingContext" title="Field in GrailsDomainBinder">metadataBuildingContext</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DelegatingBean.html#methodMissing(java.lang.String, def)" title="Method in DelegatingBean">methodMissing(String, def)</a></span> - Method in <a href="gorm/tools/beans/DelegatingBean.html">DelegatingBean</a>
@@ -1196,9 +1334,17 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">N</h2>
 <dl>
 
+<dt><span class="strong"><a href="yakworks/commons/NameUtils.html" title="Class in yakworks.commons">NameUtils</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block">Copied in from grails.util.GrailsNameUtils and converted to groovy
+ Utility methods for converting between different name types,
+ for example from class names -> property names and vice-versa. </div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#NAMING_STRATEGIES" title="Field in GrailsDomainBinder">NAMING_STRATEGIES</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block">Overrideable naming strategy. </div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#namingStrategy" title="Field in GrailsDomainBinder">namingStrategy</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#navigate(java.lang.String)" title="Method in ConfigMap">navigate(String)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#navigateSubMap(List<String>, boolean)" title="Method in ConfigMap">navigateSubMap(List&lt;String&gt;, boolean)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html#nestedPathPropCall(java.lang.String, java.lang.Object, java.lang.String)" title="Method in GormHibernateCriteriaBuilder">nestedPathPropCall(String, Object, String)</a></span> - Method in <a href="gorm/tools/hibernate/criteria/GormHibernateCriteriaBuilder.html">GormHibernateCriteriaBuilder</a>
 </dt><dd> <div class="block"></div></dd>
@@ -1294,6 +1440,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Transactional wrap for <a href='#doPersist'>doPersist</a></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/DomainRepoTest.html#persistEntity(java.util.Map)" title="Method in DomainRepoTest">persistEntity(Map)</a></span> - Method in <a href="gorm/tools/testing/unit/DomainRepoTest.html">DomainRepoTest</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#plus(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">plus(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Pogo.html" title="Class in yakworks.commons">Pogo</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/idgen/PooledIdGenerator.html" title="Class in gorm.tools.idgen">PooledIdGenerator</a></span> - Class in <a href="./gorm/tools/idgen/package-summary.html">gorm.tools.idgen</a>
 </dt><dd><div class="block">An Thread safe implementation that caches a range of values in memory by the key name (ie: "tablename.id")
  Default cache allocation size is 50 but can be set to other values. requires another IdGenerator implementation to be
@@ -1308,16 +1458,33 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/jdbc/ScrollableQuery.html#prepareSql()" title="Method in ScrollableQuery">prepareSql()</a></span> - Method in <a href="gorm/tools/jdbc/ScrollableQuery.html">ScrollableQuery</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#prettyPrint()" title="Method in ConfigMap">prettyPrint()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block">Uses JsonOutput.prettyPrint to give a pretty and more human readable string
+ @return</div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DelegatingBean.html#propertyMissing(java.lang.String)" title="Method in DelegatingBean">propertyMissing(String)</a></span> - Method in <a href="gorm/tools/beans/DelegatingBean.html">DelegatingBean</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/RepoDelegatingBean.html#propertyMissing(java.lang.String)" title="Method in RepoDelegatingBean">propertyMissing(String)</a></span> - Method in <a href="gorm/tools/beans/RepoDelegatingBean.html">RepoDelegatingBean</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/RepoMessage.html#propName(java.lang.String)" title="Method in RepoMessage">propName(String)</a></span> - Method in <a href="gorm/tools/repository/RepoMessage.html">RepoMessage</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Props.html" title="Class in yakworks.commons">Props</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/BeanPathTools.html#propsToMap(java.lang.Object, java.lang.String, java.util.Map)" title="Method in BeanPathTools">propsToMap(Object, String, Map)</a></span> - Method in <a href="gorm/tools/beans/BeanPathTools.html">BeanPathTools</a>
 </dt><dd> <div class="block">Provides an ability to retrieve a property of a source object and add it to a map.
  </div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#prune()" title="Method in ConfigMap">prune()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block">returns a new map after pruning all nulls and falsey values</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Maps.html#prune(java.util.Map, boolean)" title="Method in Maps">prune(Map, boolean)</a></span> - Method in <a href="yakworks/commons/Maps.html">Maps</a>
+</dt><dd> <div class="block">Deeply remove/prune all nulls and falsey` empty maps, lists and strings as well</div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/events/RepoEventPublisher.html#publishEvents(gorm.tools.repository.api.RepositoryApi, gorm.tools.repository.events.RepositoryEvent, java.lang.Object)" title="Method in RepoEventPublisher">publishEvents(RepositoryApi, RepositoryEvent, Object)</a></span> - Method in <a href="gorm/tools/repository/events/RepoEventPublisher.html">RepoEventPublisher</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#put(java.lang.String, java.lang.Object)" title="Method in ConfigMap">put(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#put(java.lang.String, java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">put(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#putAll(Map<? extends String, ?>)" title="Method in ConfigMap">putAll(Map&lt;? extends String, ?&gt;)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#putAll(Map<? extends String, ?>)" title="Method in ConfigMap.NullSafeNavigator">putAll(Map&lt;? extends String, ?&gt;)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
 </dt><dd> <div class="block"></div></dd>
 </dl>
 
@@ -1353,6 +1520,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 <dt><span class="strong"><a href="gorm/tools/testing/unit/GormToolsSpecHelper.html#registerRepository(java.lang.Class, java.lang.Class)" title="Method in GormToolsSpecHelper">registerRepository(Class, Class)</a></span> - Method in <a href="gorm/tools/testing/unit/GormToolsSpecHelper.html">GormToolsSpecHelper</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/DomainRepoCrudSpec.html#remove tests()" title="Method in DomainRepoCrudSpec">remove tests()</a></span> - Method in <a href="gorm/tools/testing/unit/DomainRepoCrudSpec.html">DomainRepoCrudSpec</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#remove(java.lang.Object)" title="Method in ConfigMap">remove(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#remove(java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">remove(Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepo.html#remove(java.util.Map, D)" title="Method in GormRepo">remove(Map, D)</a></span> - Method in <a href="gorm/tools/repository/GormRepo.html">GormRepo</a>
 </dt><dd> <div class="block">Transactional, Calls delete always with flush = true so we can intercept any DataIntegrityViolationExceptions.</div></dd>
@@ -1440,6 +1611,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#sessionFactoryName" title="Field in GrailsDomainBinder">sessionFactoryName</a></span> - Field in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#setAt(java.lang.Object, java.lang.Object)" title="Method in ConfigMap">setAt(Object, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#setAt(java.lang.Object, java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">setAt(Object, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/idgen/PooledIdGenerator.html#setBatchSize(java.lang.String, java.lang.Long)" title="Method in PooledIdGenerator">setBatchSize(String, Long)</a></span> - Method in <a href="gorm/tools/idgen/PooledIdGenerator.html">PooledIdGenerator</a>
 </dt><dd> <div class="block">override the default batchSize for the specified key</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#setCascadeBehaviour(org.grails.datastore.mapping.model.PersistentProperty, org.hibernate.mapping.Property)" title="Method in GrailsDomainBinder">setCascadeBehaviour(PersistentProperty, Property)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
@@ -1460,6 +1635,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block">Set params for Pager</div></dd>
 <dt><span class="strong"><a href="gorm/tools/databinding/EntityMapBinder.html#setProp(def, grails.databinding.DataBindingSource, org.grails.datastore.mapping.model.PersistentProperty, grails.databinding.events.DataBindingListener, def)" title="Method in EntityMapBinder">setProp(def, DataBindingSource, PersistentProperty, DataBindingListener, def)</a></span> - Method in <a href="gorm/tools/databinding/EntityMapBinder.html">EntityMapBinder</a>
 </dt><dd> <div class="block">Sets a value to a specified target's property.</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#setProperty(java.lang.String, java.lang.Object)" title="Method in ConfigMap">setProperty(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#setProperty(java.lang.String, java.lang.Object)" title="Method in ConfigMap.NullSafeNavigator">setProperty(String, Object)</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/repository/GormRepoEntity.html#setRepo(RepositoryApi<D>)" title="Method in GormRepoEntity">setRepo(RepositoryApi&lt;D&gt;)</a></span> - Method in <a href="gorm/tools/repository/GormRepoEntity.html">GormRepoEntity</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#setTime(java.util.Calendar, int, int, int, int)" title="Method in DateUtil">setTime(Calendar, int, int, int, int)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
@@ -1482,12 +1661,18 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/GormToolsSpecHelper.html#setupTransactionService()" title="Method in GormToolsSpecHelper">setupTransactionService()</a></span> - Method in <a href="gorm/tools/testing/unit/GormToolsSpecHelper.html">GormToolsSpecHelper</a>
 </dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Shell.html" title="Class in yakworks.commons">Shell</a></span> - Class in <a href="./yakworks/commons/package-summary.html">yakworks.commons</a>
+</dt><dd><div class="block">Simple way to run shell scripts and some shell scripts that are helpful to have.</div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#shiftCurrentDateByMonths(int)" title="Method in DateUtil">shiftCurrentDateByMonths(int)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
 </dt><dd> <div class="block">Shifts the current date by specified number of months
  and sets current day of month to 1.</div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#shouldBindCollectionWithForeignKey(org.grails.datastore.mapping.model.types.ToMany)" title="Method in GrailsDomainBinder">shouldBindCollectionWithForeignKey(ToMany)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html#shouldCollectionBindWithJoinColumn(org.grails.datastore.mapping.model.types.ToMany)" title="Method in GrailsDomainBinder">shouldCollectionBindWithJoinColumn(ToMany)</a></span> - Method in <a href="org/grails/orm/hibernate/cfg/GrailsDomainBinder.html">GrailsDomainBinder</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#size()" title="Method in ConfigMap">size()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#size()" title="Method in ConfigMap.NullSafeNavigator">size()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/hibernate/criteria/CriteriaUtils.html#sortLeftJoin(java.util.List, def, def)" title="Method in CriteriaUtils">sortLeftJoin(List, def, def)</a></span> - Method in <a href="gorm/tools/hibernate/criteria/CriteriaUtils.html">CriteriaUtils</a>
 </dt><dd> <div class="block">In some cases we need to make a sorting for a field that is null for some rows, as a result rows where value is null
@@ -1508,6 +1693,8 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">T</h2>
 <dl>
 
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#templateEval(java.lang.String)" title="Method in ConfigMap">templateEval(String)</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block">Evals the text using a GStringTemplateEngine</div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/hibernate/AutoHibernateSpec.html#testCreate()" title="Method in AutoHibernateSpec">testCreate()</a></span> - Method in <a href="gorm/tools/testing/hibernate/AutoHibernateSpec.html">AutoHibernateSpec</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/testing/unit/DomainRepoTest.html#testCreate()" title="Method in DomainRepoTest">testCreate()</a></span> - Method in <a href="gorm/tools/testing/unit/DomainRepoTest.html">DomainRepoTest</a>
@@ -1531,6 +1718,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/mango/MangoTidyMap.html#tidy(Map<String, Object>)" title="Method in MangoTidyMap">tidy(Map&lt;String, Object&gt;)</a></span> - Method in <a href="gorm/tools/mango/MangoTidyMap.html">MangoTidyMap</a>
 </dt><dd> <div class="block">Transforms passed params map to normalized mango criteria map</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/Props.html#toCamelCase(java.lang.String)" title="Method in Props">toCamelCase(String)</a></span> - Method in <a href="yakworks/commons/Props.html">Props</a>
+</dt><dd> <div class="block">converts SOME_PROP to someProp</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#toFlatConfig()" title="Method in ConfigMap">toFlatConfig()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/Pager.html#toInteger(java.lang.Object)" title="Method in Pager">toInteger(Object)</a></span> - Method in <a href="gorm/tools/Pager.html">Pager</a>
 </dt><dd> <div class="block">Converts object to integer</div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/DateUtil.html#toLocalDate(java.util.Date, java.time.ZoneId)" title="Method in DateUtil">toLocalDate(Date, ZoneId)</a></span> - Method in <a href="gorm/tools/beans/DateUtil.html">DateUtil</a>
@@ -1539,6 +1730,15 @@ if (location.href.indexOf('is-external=true') == -1) {
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/mango/MangoTidyMap.html#toMangoOperator(java.util.Map, java.util.Map)" title="Method in MangoTidyMap">toMangoOperator(Map, Map)</a></span> - Method in <a href="gorm/tools/mango/MangoTidyMap.html">MangoTidyMap</a>
 </dt><dd> <div class="block">Adds mango operators based on values types</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#toNormalMap()" title="Method in ConfigMap">toNormalMap()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block">returns an "un-optimized" map combining the denormalized keys with dots and removes duplicate keys
+ basically puts it back into a "normalized" map</div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#toProperties()" title="Method in ConfigMap">toProperties()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#toString()" title="Method in ConfigMap">toString()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#toString()" title="Method in ConfigMap.NullSafeNavigator">toString()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/json/Jsonify.JsonifyResult.html#toString()" title="Method in Jsonify.JsonifyResult">toString()</a></span> - Method in <a href="gorm/tools/json/Jsonify.JsonifyResult.html">Jsonify.JsonifyResult</a>
 </dt><dd> <div class="block"></div></dd>
 <dt><span class="strong"><a href="gorm/tools/idgen/PooledIdGenerator.IdTuple.html#toString()" title="Method in PooledIdGenerator.IdTuple">toString()</a></span> - Method in <a href="gorm/tools/idgen/PooledIdGenerator.IdTuple.html">PooledIdGenerator.IdTuple</a>
@@ -1596,6 +1796,10 @@ if (location.href.indexOf('is-external=true') == -1) {
 <h2 class="title">V</h2>
 <dl>
 
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.html#values()" title="Method in ConfigMap">values()</a></span> - Method in <a href="yakworks/commons/ConfigMap.html">ConfigMap</a>
+</dt><dd> <div class="block"></div></dd>
+<dt><span class="strong"><a href="yakworks/commons/ConfigMap.NullSafeNavigator.html#values()" title="Method in ConfigMap.NullSafeNavigator">values()</a></span> - Method in <a href="yakworks/commons/ConfigMap.NullSafeNavigator.html">ConfigMap.NullSafeNavigator</a>
+</dt><dd> <div class="block"></div></dd>
 </dl>
 
     
