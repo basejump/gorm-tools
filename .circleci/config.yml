@@ -1,3 +1,4 @@
+# circleCI build file
 version: 2
 jobs:
   build:
@@ -24,21 +25,21 @@ jobs:
 
       - checkout
 
-        # Download and cache dependencies
-        - restore_cache:
-            keys:
-              - v3-gradle-{{ checksum "build.gradle" }}
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v3-gradle-{{ checksum "build.gradle" }}
 
-        - run:
-            name: gradle check tests.
-            command: gradle check --stacktrace
+      - run:
+          name: gradle check tests.
+          command: gradle check --stacktrace
 
-        - save_cache:
-            paths:
-              - /home/gradle # the https://hub.docker.com/_/gradle/ containter does wierd stuff for cache
-              - ~/.m2
-              - ~/.gradle
-            key: v3-gradle-{{ checksum "build.gradle" }}
+      - save_cache:
+          paths:
+            - /home/gradle # the https://hub.docker.com/_/gradle/ containter does wierd stuff for cache
+            - ~/.m2
+            - ~/.gradle
+          key: v3-gradle-{{ checksum "build.gradle" }}
 
       - run: gradle build -s && gradle ciPublish
 
