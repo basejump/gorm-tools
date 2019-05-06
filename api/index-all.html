@@ -1409,7 +1409,8 @@ if (location.href.indexOf('is-external=true') == -1) {
  Generally you will want to use the <a href='../../../gorm/tools/async/AsyncBatchSupport.html#parallel' title='AsyncBatchSupport.parallel'>AsyncBatchSupport.parallel</a> method
  that added by the Trait as it calls the withTransaction</div></dd>
 <dt><span class="strong"><a href="gorm/tools/async/AsyncBatchSupport.html#parallelBatch(java.util.Map, List<List>, groovy.lang.Closure)" title="Method in AsyncBatchSupport">parallelBatch(Map, List&lt;List&gt;, Closure)</a></span> - Method in <a href="gorm/tools/async/AsyncBatchSupport.html">AsyncBatchSupport</a>
-</dt><dd> <div class="block">calls <a href='#parallel()'>parallel()</a> and passes args, batchList and the closure through to <a href='#batchTrx()'>batchTrx()</a></div></dd>
+</dt><dd> <div class="block">calls <a href='#parallel'>parallel</a> with the args, batches list calling <a href='#doBatch'>doBatch</a> for each batch in batches
+ passes itemClosure down through to the <a href='#doBatch'>doBatch</a></div></dd>
 <dt><span class="strong"><a href="gorm/tools/async/AsyncBatchSupport.html#parallelCollate(java.util.Map, java.util.List, groovy.lang.Closure)" title="Method in AsyncBatchSupport">parallelCollate(Map, List, Closure)</a></span> - Method in <a href="gorm/tools/async/AsyncBatchSupport.html">AsyncBatchSupport</a>
 </dt><dd> <div class="block">Uses collate to break or slice the list into batches and then calls parallelBatch</div></dd>
 <dt><span class="strong"><a href="gorm/tools/beans/IsoDateUtil.html#parse(java.lang.String)" title="Method in IsoDateUtil">parse(String)</a></span> - Method in <a href="gorm/tools/beans/IsoDateUtil.html">IsoDateUtil</a>
