@@ -3,18 +3,16 @@
 title: Gorm Tools Grails Plugin
 description: Plugin tools Grails/Gorm - repository data services, json query language, fast data binder
 author: 9ci Inc
-group: test.yak #org.grails.plugins
+group: deleteme.yak #org.grails.plugins
 
-#releaseNotes:
-#  publicationRepository: "https://foobar/baz"
-#github:
-#  fullName: basejump/gorm-tools # owner and repo get parsed from this
+github:
+  fullName: basejump/gorm-tools
 
 team:
   developers: ['basejump: Joshua Burnett', 'snimavat: Sudhir Nimavat', 'alexeyzvegintcev: Alexey']
 
 bintray:
-  enabled: true #-> set this to false to turn off
+  enabled: true
   # user: ${findAnyProperty("BINTRAY_USER")} //uses System var property
   # key: ${props.findAny("BINTRAY_KEY")} //uses System var property
   pkg:
