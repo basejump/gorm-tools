@@ -3,6 +3,8 @@ rootProject.name = 'gorm-tools-root'
 include "examples:benchmarks"
 include "examples:test-app"
 include 'plugin'
+include 'groovy-commons'
+
 findProject(':plugin').with{
   name = 'gorm-tools'
   //buildFileName = "${name}.gradle"

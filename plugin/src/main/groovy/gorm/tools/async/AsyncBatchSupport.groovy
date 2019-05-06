@@ -1,4 +1,7 @@
-/* Copyright 2018. 9ci Inc. Licensed under the Apache License, Version 2.0 */
+/*
+* Copyright 2019 9ci Inc - Licensed under the Apache License, Version 2.0 (the "License")
+* You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+*/
 package gorm.tools.async
 
 import gorm.tools.WithTrx
@@ -22,7 +25,6 @@ trait AsyncBatchSupport implements WithTrx {
     @Value('${hibernate.jdbc.batch_size:0}')
     int batchSize
 
-    /** calls {@link #parallel()} and passes args, batchList and the closure through to {@link #batchTrx()} */
     /**
      * calls {@link #parallel} with the args, batches list calling {@link #doBatch} for each batch in batches
      * passes itemClosure down through to the {@link #doBatch}

@@ -7,32 +7,32 @@ buildscript {
   }
   dependencies {
     classpath "org.grails:grails-gradle-plugin:$grailsVersion"
-    classpath "org.yakworks:gradle-plugins:0.1.46-SNAPSHOT"
-
-    //FIXME, added it here explicitely, coz yakworks.shipkit uses older version which fails to resolve eclipse:jgit dependency
-    //classpath "org.ajoberstar:grgit:2.2.1"
+    classpath "org.yakworks:gradle-plugins:1.0.3-SNAPSHOT"
   }
 }
-apply plugin: 'yakworks.shipkit' //our opinionated defaults for gradle groovy & grails projects
+
+apply plugin: 'yakworks.shipyak' //our opinionated defaults for gradle groovy & grails projects
 
 subprojects {
-  plugins.withId('java') {
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
+  ['org.grails.grails-plugin', 'org.grails.grails-web'].each { plugId ->
+    plugins.withId(plugId) {
+      sourceCompatibility = '1.8'
+      targetCompatibility = '1.8'
 
-    dependencies {
-      testRuntime "com.h2database:h2"
-      testRuntime "org.apache.tomcat:tomcat-jdbc"
+      dependencies {
+        testRuntime "com.h2database:h2"
+        testRuntime "org.apache.tomcat:tomcat-jdbc"
 
-      testCompile "org.grails:grails-gorm-testing-support"
-      testCompile "org.grails:grails-web-testing-support"
-      testCompile "org.grails.plugins:build-test-data:$versionBuildTestData"
-      testCompile "org.grails:views-json-testing-support:$versionViews"
-    }
-    test {
-      //This way Spock/Groovy power asserts will be  visiblein the build log
-      //Very useful - you don't have to look at the test results to debug a test failure
-      testLogging.exceptionFormat = 'full'
+        testCompile "org.grails:grails-gorm-testing-support"
+        testCompile "org.grails:grails-web-testing-support"
+        testCompile "org.grails.plugins:build-test-data:$versionBuildTestData"
+        testCompile "org.grails:views-json-testing-support:$versionViews"
+      }
+      test {
+        //This way Spock/Groovy power asserts will be  visiblein the build log
+        //Very useful - you don't have to look at the test results to debug a test failure
+        testLogging.exceptionFormat = 'full'
+      }
     }
   }
 }

@@ -64,14 +64,14 @@ ext.codenarcRuleset= '''
 
 //main codenarc block is setup in yakworks.defaults
 codenarcMain {
-  exclude '**/GormToolsGrailsPlugin.groovy'
-  exclude '**/GormToolsPluginHelper.groovy'
+  //exclude '**/GormToolsGrailsPlugin.groovy'
+  //exclude '**/GormToolsPluginHelper.groovy'
 }
-
-codenarcTest {
-  //don't check any of the tests right now as it just slows it down, look at enabling this in future
-  exclude '**/*'
-}
+//
+//codenarcTest {
+//  //don't check any of the tests right now as it just slows it down, look at enabling this in future
+//  exclude '**/*'
+//}
 
 test {
   //testLogging.showStandardStreams = true

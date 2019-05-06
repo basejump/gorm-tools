@@ -1,0 +1,14 @@
+apply plugin:"yakworks.groovy-lib"
+
+dependencies {
+    // Use the latest Groovy version for building this library
+    compile 'org.codehaus.groovy:groovy-all:2.4.15'
+    compile 'org.slf4j:slf4j-log4j12:1.7.25'
+    // Use the awesome Spock testing and specification framework
+    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+//println config.prettyPrint()
+//println config.bintray.user
+//println config.bintray.key
+//println config.git.releasable.grepDocs

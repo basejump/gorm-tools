@@ -5,6 +5,8 @@ description: Plugin tools Grails/Gorm - repository data services, json query lan
 author: 9ci Inc
 group: test.yak #org.grails.plugins
 
+#releaseNotes:
+#  publicationRepository: "https://foobar/baz"
 #github:
 #  fullName: basejump/gorm-tools # owner and repo get parsed from this
 
@@ -12,7 +14,7 @@ team:
   developers: ['basejump: Joshua Burnett', 'snimavat: Sudhir Nimavat', 'alexeyzvegintcev: Alexey']
 
 bintray:
-  # enabled: true -> set this to false to turn off
+  enabled: true #-> set this to false to turn off
   # user: ${findAnyProperty("BINTRAY_USER")} //uses System var property
   # key: ${props.findAny("BINTRAY_KEY")} //uses System var property
   pkg:
@@ -20,4 +22,5 @@ bintray:
     # userOrg: ${config.github.owner} -> will be github owner by default
 
 maven:
+  #repoUrl: http://repo.9ci.com/grails-plugins
   snapshotUrl: http://repo.9ci.com/oss-snapshots
