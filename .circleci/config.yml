@@ -30,7 +30,7 @@ jobs:
 
       - run:
           name: gradle check tests.
-          command: gradle check --stacktrace
+          command: gradle check
 
       - save_cache:
           paths:
