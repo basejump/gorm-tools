@@ -22,9 +22,7 @@ jobs:
     # resource_class: large
 
     steps:
-
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -46,17 +44,13 @@ jobs:
       - store_artifacts:
           path: plugin/build/reports/tests/test/
           destination: test-reports/unit/
-
       - store_artifacts:
           path: plugin/build/reports/codenarc/
           destination: codenarc/
-
       - store_test_results:
           path: plugin/build/test-results
-
       - store_artifacts:
           path: examples/test-app/build/reports/tests
           destination: test-reports/integration
-
       - store_test_results:
           path: examples/test-app/build/test-results
