@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # docker image with python and mkdocs on it already as well, based on gradle:4.6-alpine
-      - image: yakworks/alpine-java:jdk8-python
+      - image: yakworks/alpine-java:gradle-4.10.3
 #    branches:
 #      only:
 #        - master
@@ -31,7 +31,7 @@ jobs:
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
       # --max-workers 2
-      - run: ./gradlew resolveConfigurations --no-daemon
+      - run: gradle resolveConfigurations --no-daemon
 
       - save_cache:
           paths:
@@ -42,7 +42,7 @@ jobs:
 
       - run:
           name: gradle check tests.
-          command: ./gradlew check --no-daemon
+          command: gradle check --no-daemon
       - store_artifacts:
           path: plugin/build/reports/tests/test/
           destination: test-reports/unit/
@@ -58,7 +58,7 @@ jobs:
           path: examples/test-app/build/test-results
 
       ### Finally do the build and publish. ciPublish will check if this is a PR or on a branch that should not be published
-      - run: ./gradlew build -s --no-daemon
-      - run: ./gradlew ciPublish --no-daemon
+      - run: gradle build -s --no-daemon
+      - run: gradle ciPublish --no-daemon
 
 
