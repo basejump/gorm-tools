@@ -10,6 +10,7 @@ import spock.lang.Specification
 class DbDialectServiceSpec extends Specification implements ServiceUnitTest<DbDialectService> {
 
     void setup() {
+        //foo
         service.dialectName = null
     }
 
