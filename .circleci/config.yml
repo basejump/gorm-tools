@@ -34,12 +34,12 @@ jobs:
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
       - run:
-          name: ✔︎ -- gradle resolveConfigurations - downloads dependencies
+          name: ✔︎ -- Downloads Dependencies [gradle resolveConfigurations]
           command: gradle resolveConfigurations --no-daemon
 
       # compiling as a seperate step before running check helps with the "finished with non-zero exit value 137" error
       - run:
-          name: ✔︎ -- gradle classes compile
+          name: ✔︎ -- Compile [gradle classes]
           command: gradle classes --no-daemon
 
       - save_cache:
@@ -50,7 +50,7 @@ jobs:
           key: gradle-{{ checksum "cache-checksum.tmp" }}
 
       - run:
-          name: ✔︎ -- gradle check tests.
+          name: ✔︎ -- Checks Linter and Tests [gradle check]
           command: gradle check --no-daemon --max-workers 2
       - store_artifacts:
           path: plugin/build/reports/tests/test/
@@ -67,6 +67,8 @@ jobs:
           path: examples/test-app/build/test-results
 
       ### Finally do the build and publish. ciPublish will check if this is a PR or on a branch that should not be published
-      - run: ✔︎ -- gradle ciPublish --no-daemon
+      - run:
+          name: ✔︎ -- Publish Library if needed [gradle ciPublish]
+          command: gradle ciPublish --no-daemon
 
 
