@@ -40,5 +40,3 @@ subprojects {
     }
   }
 }
-//println config.prettyPrint()
-//spotless.formats.groovyGradle.target('gradle/*.gradle', 'build.gradle')
