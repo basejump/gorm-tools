@@ -5,6 +5,10 @@ description: Plugin tools Grails/Gorm - repository data services, json query lan
 author: 9ci Inc
 group: deleteme.yak #org.grails.plugins
 
+git:
+  config:
+    user: Joshua
+    email: <joshdev@9ci.com>
 github:
   fullName: basejump/gorm-tools
 
