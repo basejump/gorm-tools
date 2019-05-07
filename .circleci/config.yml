@@ -15,7 +15,7 @@ jobs:
       # Customize the JVM maximum heap limit
       # JVM_OPTS: -Xmx3200m
       MALLOC_ARENA_MAX: 2
-      GRADLE_OPTS: "-Xmx3200m -Dorg.gradle.daemon=false" #daemon false doesn't seem to get picked up by fork
+      GRADLE_OPTS: "-Xmx2048m -Xms2048m -Dorg.gradle.daemon=false" #daemon false doesn't seem to get picked up by fork
       TERM: dumb
 
     parallelism: 1
@@ -30,7 +30,7 @@ jobs:
 
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into
-      - run: gradle resolveConfigurations
+      - run: gradle resolveConfigurations --no-daemon
 
       - run:
           name: gradle check tests.
@@ -43,7 +43,7 @@ jobs:
             - ~/.gradle
           key: v3-gradle-{{ checksum "build.gradle" }}
 
-      - run: gradle build -s && gradle ciPublish
+      - run: gradle build -s && gradle ciPublish --no-daemon
 
       - store_artifacts:
           path: plugin/build/reports/tests/test/
