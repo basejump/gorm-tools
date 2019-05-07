@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       # docker image with python and mkdocs on it already as well, based on gradle:4.6-alpine
-      - image: yakworks/alpine-java:gradle-4.10.3
+      - image: yakworks/alpine-java:jdk8-python
 #    branches:
 #      only:
 #        - master
@@ -15,7 +15,7 @@ jobs:
       # Customize the JVM maximum heap limit
       # JVM_OPTS: -Xmx3200m
       MALLOC_ARENA_MAX: 2
-      GRADLE_OPTS: "-Xmx2048m -Xms2048m -Dorg.gradle.daemon=false" #daemon false doesn't seem to get picked up by fork
+      GRADLE_OPTS: "-Xmx2048m -Xms2048m" #daemon false doesn't seem to get picked up by fork
       TERM: dumb
 
     parallelism: 1
@@ -31,7 +31,7 @@ jobs:
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
       # --max-workers 2
-      - run: gradle resolveConfigurations --no-daemon
+      - run: ./gradlew resolveConfigurations --no-daemon
 
       - save_cache:
           paths:
@@ -42,7 +42,7 @@ jobs:
 
       - run:
           name: gradle check tests.
-          command: gradle check --no-daemon
+          command: ./gradlew check --no-daemon
       - store_artifacts:
           path: plugin/build/reports/tests/test/
           destination: test-reports/unit/
@@ -58,7 +58,7 @@ jobs:
           path: examples/test-app/build/test-results
 
       ### Finally do the build and publish. ciPublish will check if this is a PR or on a branch that should not be published
-      - run: gradle build -s --no-daemon
-      - run: gradle ciPublish --no-daemon
+      - run: ./gradlew build -s --no-daemon
+      - run: ./gradlew ciPublish --no-daemon
 
 
