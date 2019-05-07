@@ -34,7 +34,7 @@ jobs:
 
       - run:
           name: gradle check tests.
-          command: gradle check
+          command: gradle check --no-daemon --max-workers 2
 
       - save_cache:
           paths:
