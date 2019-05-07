@@ -18,7 +18,7 @@
     |    |(  <_> |  <_> )  |__\___ \               `!!! !!!! !!  )!!!!!!!!!!!!!
     |____| \____/ \____/|____/____  >               !!  ! ! \( \(  !!!|/!  |/!
                                   \/               /_(      /_(/_(    /_(  /_(   
-         Version: 6.1.23
+         Version: 6.1.24
          
 </pre>
 
@@ -31,10 +31,10 @@
 
 
 ```
-compile "org.grails.plugins:gorm-tools:6.1.23"
+compile "org.grails.plugins:gorm-tools:6.1.24"
 ``` 
 
-Gorm-tools allows your Grails/Gorm project to start with a design of best practices that they can customize along the way. 
+xxxGorm-tools allows your Grails/Gorm project to start with a design of best practices that they can customize along the way. 
 This brings an opinionated starting point to a Grails/Gorm project but without being locked in.
 Developers are free to easily customize, replace and disable these patterns when their opinions differ.
 
