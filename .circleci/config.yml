@@ -30,11 +30,8 @@ jobs:
 
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
+      # --max-workers 2
       - run: gradle resolveConfigurations --no-daemon
-
-      - run:
-          name: gradle check tests.
-          command: gradle check --no-daemon --max-workers 2
 
       - save_cache:
           paths:
@@ -43,9 +40,9 @@ jobs:
             - ~/.gradle
           key: v3-gradle-{{ checksum "build.gradle" }}
 
-      - run: gradle build -s --no-daemon
-      - run: gradle ciPublish --no-daemon
-
+      - run:
+          name: gradle check tests.
+          command: gradle check --no-daemon
       - store_artifacts:
           path: plugin/build/reports/tests/test/
           destination: test-reports/unit/
@@ -59,3 +56,9 @@ jobs:
           destination: test-reports/integration
       - store_test_results:
           path: examples/test-app/build/test-results
+
+      ### Finally do the build and publish. ciPublish will check if this is a PR or on a branch that should not be published
+      - run: gradle build -s --no-daemon
+      - run: gradle ciPublish --no-daemon
+
+
