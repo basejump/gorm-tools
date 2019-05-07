@@ -34,7 +34,7 @@ subprojects {
         testLogging.exceptionFormat = 'full'
         //The below seems to help  with "Process 'Gradle Worker Daemon 1' finished with non-zero exit value 137" in circle
         //https://stackoverflow.com/questions/38967991/why-are-my-gradle-builds-dying-with-exit-code-137
-        maxHeapSize '512m'
+        //maxHeapSize '512m'
         jvmArgs "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap"
       }
     }
