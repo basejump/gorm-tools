@@ -29,7 +29,7 @@ jobs:
             - v3-gradle-{{ checksum "build.gradle" }}
 
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
-      # this also kind of helps with the memory issue we keep running into
+      # this also kind of helps with the memory issue we keep running into by breaking it up
       - run: gradle resolveConfigurations --no-daemon
 
       - run:
@@ -43,7 +43,8 @@ jobs:
             - ~/.gradle
           key: v3-gradle-{{ checksum "build.gradle" }}
 
-      - run: gradle build -s && gradle ciPublish --no-daemon
+      - run: gradle build -s --no-daemon
+      - run: gradle ciPublish --no-daemon
 
       - store_artifacts:
           path: plugin/build/reports/tests/test/
