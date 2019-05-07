@@ -15,7 +15,7 @@ jobs:
       # Customize the JVM maximum heap limit
       # JVM_OPTS: -Xmx3200m
       MALLOC_ARENA_MAX: 2
-      GRADLE_OPTS: "-Xmx3048m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap" #daemon false doesn't seem to get picked up by fork
+      GRADLE_OPTS: "-Xmx3048m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dorg.gradle.daemon=false" #daemon false doesn't seem to get picked up by fork
       TERM: dumb
 
     parallelism: 1
@@ -31,11 +31,14 @@ jobs:
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
       # --max-workers 2
-      - run: gradle resolveConfigurations --no-daemon
-
       - run:
-          name: gradle classes compile.
-          command: gradle classes --no-daemon --max-workers 2
+          name: gradle resolveConfigurations - downloads dependencies
+          command: gradle resolveConfigurations --no-daemon
+
+      # compiling as a seperate step before running check helps with the "finished with non-zero exit value 137" error
+      - run:
+          name: gradle classes compile
+          command: gradle classes --no-daemon
 
       - save_cache:
           paths:
