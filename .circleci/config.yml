@@ -28,6 +28,10 @@ jobs:
           keys:
             - v3-gradle-{{ checksum "build.gradle" }}
 
+      # see https://github.com/palantir/gradle-configuration-resolver-plugin
+      # this also kind of helps with the memory issue we keep running into
+      - run: gradle resolveConfigurations
+
       - run:
           name: gradle check tests.
           command: gradle check
