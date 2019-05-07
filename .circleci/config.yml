@@ -34,8 +34,8 @@ jobs:
       - run: gradle resolveConfigurations --no-daemon
 
       - run:
-        name: gradle classes compile.
-        command: gradle classes --no-daemon --max-workers 2
+          name: gradle classes compile.
+          command: gradle classes --no-daemon --max-workers 2
 
       - save_cache:
           paths:
