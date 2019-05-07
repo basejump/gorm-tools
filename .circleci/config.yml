@@ -15,7 +15,7 @@ jobs:
       # Customize the JVM maximum heap limit
       # JVM_OPTS: -Xmx3200m
       MALLOC_ARENA_MAX: 2
-      GRADLE_OPTS: "-Xmx2048m -Xms2048m" #daemon false doesn't seem to get picked up by fork
+      GRADLE_OPTS: "-Xmx3048m -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap" #daemon false doesn't seem to get picked up by fork
       TERM: dumb
 
     parallelism: 1
