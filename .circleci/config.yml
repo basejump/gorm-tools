@@ -33,9 +33,8 @@ jobs:
 
       # see https://github.com/palantir/gradle-configuration-resolver-plugin
       # this also kind of helps with the memory issue we keep running into by breaking it up
-      # --max-workers 2
       - run:
-          name: gradle resolveConfigurations - downloads dependencies
+          name: ✔︎  gradle resolveConfigurations - downloads dependencies
           command: gradle resolveConfigurations --no-daemon
 
       # compiling as a seperate step before running check helps with the "finished with non-zero exit value 137" error
@@ -68,7 +67,6 @@ jobs:
           path: examples/test-app/build/test-results
 
       ### Finally do the build and publish. ciPublish will check if this is a PR or on a branch that should not be published
-      - run: gradle build -s --no-daemon
       - run: gradle ciPublish --no-daemon
 
 
